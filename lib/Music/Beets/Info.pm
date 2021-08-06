@@ -8,13 +8,13 @@ BEGIN {
   use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS);
   @ISA = qw(Exporter);
 
-  $VERSION = '0.001';
+  $VERSION = '0.002';
 
   @EXPORT_OK = qw(beet_info);
   %EXPORT_TAGS = [ qw() ];
 }
 
-use Carp ();
+use Carp qw(croak);
 
 use IPC::Cmd qw(run);
 
