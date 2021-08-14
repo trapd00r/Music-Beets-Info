@@ -32,17 +32,15 @@ WriteMakefile1(
 
   NAME             => q{Music::Beets::Info},
   AUTHOR           => q{Magnus Woldrich <m@japh.se>},
-  ABSTRACT         => q{Get Beets data into Perl},
+  ABSTRACT         => q{Import data from Beets database into a perl data structure},
   VERSION_FROM     => q{lib/Music/Beets/Info.pm},
   LICENSE          => q{perl},
   EXE_FILES        => [ glob("bin/*") ],
 
-  PREREQ_PM        => {
+  PREREQ_BIN        => {
     q{Term::ExtendedColor} => q{0.500},
     q{File::LsColor}       => q{0},
     q{Audio::MPD}          => q{0},
-    q{Time::Date}          => q{0},
-    q{Term::ExtendedColor} => q{0},
   },
 
   MAN1PODS         => { },

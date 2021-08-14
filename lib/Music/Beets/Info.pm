@@ -44,11 +44,18 @@ __END__
 
 =head1 NAME
 
-Music::Beet:Info -
+Music::Beets:Info - Import data from Beets database into a perl data structure
 
 =head1 SYNOPSIS
 
+    use Music::Beets::Info qw(beet_info);
+    my $info = beet_info($filename);
+
 =head1 DESCRIPTION
+
+Given a valid filename known to Beets, returns all available info for
+a song. This will be data from musicbrainz or discogs, fetched at
+import time.
 
 =head1 EXPORTS
 
@@ -56,17 +63,16 @@ None by default.
 
 =head1 FUNCTIONS
 
-=head2 foo()
+=head2 beet_info()
 
 =over 4
 
-=item    Arguments: $string
+=item    Arguments: $filename
 
-=item Return value: \%hash
+=item Return value: \%info
 
 =back
 
-Description.
 
 =head1 REPORTING BUGS
 
