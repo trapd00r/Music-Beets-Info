@@ -1,0 +1,5 @@
+bin/mpd-beets-np
+lib/Music/Beets/Info.pm
+Makefile.PL
+MANIFEST
+Changes
